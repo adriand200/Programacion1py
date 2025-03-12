@@ -1,4 +1,4 @@
-ejemplo1=input(int("Ingrese un valor: "))
+ejemplo1=int(input("Ingrese un valor: "))
 if ejemplo1>5:
     print("El valor de la variable ejemplo1 es mayor a 5")
     print("fuera de estructura de control")
