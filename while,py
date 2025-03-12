@@ -1,0 +1,7 @@
+
+opcion=input("Introduce una opcion: ")
+while opcion != "salir":
+    print("dentro del bucle de repeticion")
+    opcion = int(input("Introduce una opcion: "))
+
+    
