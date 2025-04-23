@@ -8,7 +8,7 @@ for i in range(0 , 10 , 2):
 #variable
 x="python"
 for letras in x:
-    if letras == "h":#para q pare en t
+    if letras == "h":#para q pare en tgit
         break
     else:
         print(letras)
