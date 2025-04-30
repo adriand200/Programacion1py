@@ -1,6 +1,3 @@
-from ast import Del
-
-
 programacion={"docente":
             {"nombre":"carlos",
                         "apellido":"gonzales",
