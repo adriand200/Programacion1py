@@ -36,6 +36,8 @@ class Conche:
 #Llamar a la clase coche
 Toyota = Conche("Toyota", "Corolla", "ABC123", "Rojo")
 BMW = Conche("BMW", "X5", "XYZ789", "Blanco")
+mustang = Conche("Mustang", "GT", "MUS123", "Negro")
+koenigsegg = Conche("Koenigsegg", "Agera", "KOE123", "Azul")
 #Llamar a los metodos de la clase coche
 BMW.mostrar_informacion()
 Toyota.encender()
