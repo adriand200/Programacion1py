@@ -1,60 +1,69 @@
-#Solicita y muestra informacion
-#Menu
+# Solicita y muestra información
+
+# Menú
 def menu():
     """
-    Muestra el menu de opciones
+    Muestra el menú de opciones
     """
-    print("Bienvenido a la calculadora de figuras geometricas")
-    print("Seleccione una figura para calcular su area:")
+    print("\nBienvenido a la calculadora de figuras geométricas")
+    print("Seleccione una figura para calcular su área:")
     print("1. Cuadrado")
-    print("2. Circulo")
-    print("3. Triangulo")
-    print("4. Salir")
-    opcion = int(input("Seleccione una opcion: "))
+    print("2. Círculo")
+    print("3. Triángulo")
+    print("4. Rectángulo")
+    print("5. Rombo")
+    print("6. Trapecio")
+    print("7. Romboide")
+    print("8. Pentágono regular")
+    print("9. Salir")
+    opcion = int(input("Seleccione una opción: "))
     return opcion
-#Solicitar datos cuadrado
+
+# Solicitudes de datos
 def solicitar_datos_cuadrado():
-    """
-    Solicita el lado de un cuadrado
-    :return: float
-    """
     lado = float(input("Ingrese el lado del cuadrado: "))
     return lado
-#Solicitar datos circulo
+
 def solicitar_datos_circulo():
-    """
-    Solicita el radio de un circulo
-    :return: float
-    """
-    radio = float(input("Ingrese el radio del circulo: "))
+    radio = float(input("Ingrese el radio del círculo: "))
     return radio
-#Solicitar datos triangulo
+
 def solicitar_datos_triangulo():
-    """
-    Solicita la base y altura de un triangulo
-    :return: float, float
-    """
-    base = float(input("Ingrese la base del triangulo: "))
-    altura = float(input("Ingrese la altura del triangulo: "))
+    base = float(input("Ingrese la base del triángulo: "))
+    altura = float(input("Ingrese la altura del triángulo: "))
     return base, altura
-#Mostrar area del cuadrado
-def mostrar_area_cuadrado(area):
+
+def solicitar_datos_rectangulo():
+    base = float(input("Ingrese la base del rectángulo: "))
+    altura = float(input("Ingrese la altura del rectángulo: "))
+    return base, altura
+
+def solicitar_datos_rombo():
+    D = float(input("Ingrese la diagonal mayor del rombo: "))
+    d = float(input("Ingrese la diagonal menor del rombo: "))
+    return D, d
+
+def solicitar_datos_trapecio():
+    B = float(input("Ingrese la base mayor del trapecio: "))
+    b = float(input("Ingrese la base menor del trapecio: "))
+    h = float(input("Ingrese la altura del trapecio: "))
+    return B, b, h
+
+def solicitar_datos_romboide():
+    base = float(input("Ingrese la base del romboide: "))
+    altura = float(input("Ingrese la altura del romboide: "))
+    return base, altura
+
+def solicitar_datos_pentagono():
+    P = float(input("Ingrese el perímetro del pentágono: "))
+    a = float(input("Ingrese el apotema del pentágono: "))
+    return P, a
+
+# Mostrar resultados
+def mostrar_area(figura, area):
     """
-    Muestra el area de un cuadrado
+    Muestra el área de una figura
+    :param figura: str
     :param area: float
     """
-    print(f"El area del cuadrado es: {area}")
-#Mostrar area del circulo
-def mostrar_area_circulo(area):
-    """
-    Muestra el area de un circulo
-    :param area: float
-    """
-    print(f"El area del circulo es: {area}")
-#Mostrar area del triangulo
-def mostrar_area_triangulo(area):
-    """
-    Muestra el area de un triangulo
-    :param area: float
-    """
-    print(f"El area del triangulo es: {area}")
+    print(f"El área del {figura} es: {area}")
